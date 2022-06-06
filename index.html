@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculating System</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container bg-white fw-bold" id="form">
+        <div class="row header text-center">
+            <h1>Grade Calculating System</h1>
+        </div>
+        <div class="row form p-4 ">
+            <div class="col-md-8 col-sm-7">
+                <div class="sub1">
+                    <label for="computer">Computer</label></br>
+                    <input type="number" name="computer" id="computer" class="form-control">
+                </div></br>
+                <div class="sub2">
+                    <label for="english">English</label></br>
+                    <input type="number" name="English" id="english" class="form-control">
+                </div></br>
+                <div class="sub3">
+                    <label for="maths">Maths</label></br>
+                    <input type="number" name="Maths" id="maths" class="form-control">
+                </div></br>
+                <div class="sub4">
+                    <label for="physics">Physics</label></br>
+                    <input type="number" name="Physics" id="physics" class="form-control">
+                </div></br>
+                <div class="sub5">
+                    <label for="chemistry">Chemistry</label></br>
+                    <input type="number" name="Chemistry" id="chemistry" class="form-control">
+                </div></br>
+                <button class="btn btn-success col-4" onclick="calculate()">Calculate</button>
+                
+            </div>
+            <div class="col-md-4 col-sm-5 ">
+                <table class="table table-bordered border-dark d-flex justify-content-center align-item-center">
+                    <tr>
+                        <td>Total Marks:</td>
+                        <td>500</td>
+                    </tr>
+
+                    <td>Obtained Marks:</td>
+                    <td id="obtain"></td>
+                    </tr>
+
+                    <td>Percentage:</td>
+                    <td id="per"></td>
+                    </tr>
+
+                    <td>Grade:</td>
+                    <td id="grade"></td>
+                    </tr>
+
+                    <td>Remarks:</td>
+                    <td id="remarks"></td>
+                    </tr>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
